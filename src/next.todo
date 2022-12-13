@@ -1,0 +1,12 @@
+- Implement normal Login
+- Implement google login
+- Create login auth for the login page
+- Update the side navigation with Home, Archives, Profile, Claims, Companies
+- Allow updating password from Profile Page, update name, email, profile picture. (Get this from Phone)
+- Create a proper flow for all the claims
+- Design a better system to sort the claims
+- Create a Add and Update claim page
+- Create a quick view for the claims on Home Page (Press and Hold to View an Enlarged Claim View, sort of like a Glance)
+- Learn how to handle user Welcome (Like a First Time User Onboarding)
+- Add Slides for User Onboarding (Before login and have something after they login or signup for the first time)
+- Create a signup page that allows users to signup using email or google account
