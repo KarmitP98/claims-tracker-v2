@@ -1,0 +1,29 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.width-full{
+  width: 100%;
+}
+
+.height-full{
+  height: 100%;
+}
+
+.flex-row{
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 1em;
+}
+
+.flex-column{
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.horizontal-divider{
+  width: 100%;
+  border: 1px solid rgba(var(--ion-color-light-contrast-rgb), 0.10);
+}

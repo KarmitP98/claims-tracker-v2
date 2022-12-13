@@ -1,0 +1,45 @@
+<ion-content color='light' fullscreen>
+	<div class='ion-page ion-padding ion-align-items-center ion-justify-content-center width-full height-full'>
+		<h1>Welcome to Claims Tracker!</h1>
+		<form #loginForm="ngForm" (ngSubmit)='handleSubmit()'>
+			<ion-item fill='outline'>
+				<ion-label position='floating'>Email</ion-label>
+				<ion-input
+						[(ngModel)]='email'
+						[required]='true'
+						name='email'
+						email
+						placeholder='Enter your email'
+						type='email'
+				></ion-input>
+				<ion-note slot='error'>Invalid Email Address!</ion-note>
+			</ion-item>
+			<br>
+			<ion-item fill='outline'>
+				<ion-label position='floating'>Password</ion-label>
+				<ion-input
+						[(ngModel)]='password'
+						[required]='true'
+						name='password'
+						maxlength='20'
+						minlength='6'
+						placeholder='Enter your password'
+						type='password'
+				></ion-input>
+				<ion-note slot='error'>Invalid Password!</ion-note>
+			</ion-item>
+			<br>
+			<ion-button color='primary' expand='block' shape='round' buttonType='submit'>
+				Login
+			</ion-button>
+			<br>
+			<div class='horizontal-divider'></div>
+			<br>
+			<div class='flex-row ion-justify-content-evenly width-full ion-align-items-center'>
+				<ion-button color='danger' fill='outline' shape='round' slot='icon' buttonType='button'>
+					<ion-icon name='logo-google'></ion-icon>
+				</ion-button>
+			</div>
+		</form>
+	</div>
+</ion-content>
