@@ -4,6 +4,18 @@
 		<br>
 		<form #loginForm='ngForm' (ngSubmit)='handleSubmit()'>
 			<ion-item fill='outline'>
+				<ion-label position='floating'>User Name</ion-label>
+				<ion-input
+						[(ngModel)]='username'
+						[required]='true'
+						name='username'
+						placeholder='Enter your name'
+						type='text'
+				></ion-input>
+				<!--				<ion-note slot='error' *ngIf='!loginForm.untouched'>Invalid Email Address!</ion-note>-->
+			</ion-item>
+			<br>
+			<ion-item fill='outline'>
 				<ion-label position='floating'>Email</ion-label>
 				<ion-input
 						[(ngModel)]='email'
@@ -30,13 +42,13 @@
 				<!--				<ion-note slot='error' *ngIf='!loginForm.untouched'>Invalid Password!</ion-note>-->
 			</ion-item>
 			<br>
-			<ion-label>Don't have an account?
-			<u routerLink='/signup' class='ion-color-primary'>Sign Up!</u>
+			<ion-label>Already have an account?
+				<u routerLink='/login' class='ion-color-primary'>Login!</u>
 			</ion-label>
 			<br>
 			<br>
 			<ion-button color='primary' expand='block' shape='round'>
-				Login
+				Signup
 			</ion-button>
 			<br>
 			<div class='horizontal-divider'></div>
